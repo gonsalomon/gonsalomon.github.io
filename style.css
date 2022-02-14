@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./img/bg.jpg");
+    background-repeat: repeat;
+    font-family: 'Courier New', Courier, monospace;
+}
+a:link{
+    text-decoration: none;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+}
+header{
+    background-color: #003366;
+    width: 100%;
+}
+#logo{
+    max-width: 200px;
+}
+h1{
+    color: white;
+    width: 100%;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    color:white;
+    background-color: #003366;
+    width: 100%;
+    align-self: flex-end;
+}
+.tiny{
+    max-width: 50px;
+}
+.italic{
+    font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+    }
+    .row{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #logo{
+        max-width: 300px;
+    }
+}
