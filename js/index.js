@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             contact.classList.add('active');
             content.innerHTML = `<div class="col">
             <div class="row"><img class="tiny" src="./img/ig.svg"><a class="center" href="https://www.instagram.com/gonsalomonn/">Instagram</a></div>
-            <div class="row"><img class="tiny" src="./img/tw.svg"><a class="center" href="https://twitter.com/GonzaloSalomon8">Twitter</a></div>
-            <div class="row"><img class="tiny" src="./img/mail.svg"><a class="center" id="mail">Mail me!</a></div>
+            <div class="row"><img class="tiny" src="./img/mail.svg"><a class="center" id="mail">salomongonzalo8@gmail.com</a></div>
             </div>`;
             let mail = document.querySelector('#mail');
             mail.addEventListener('click', () => {
