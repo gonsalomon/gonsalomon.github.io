@@ -1,25 +1,10 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', () => {
     const home = document.querySelector('#home');
+    //quick lazy fix to reload stuff while testing
     home.addEventListener('click', () => {
+        /*this page is so light you don't even consider its reloading time as a performance issue, but it's a good practice to do it*/
         window.location.href = './index.html';
     });
-    let contact = document.querySelector('#contact');
-    let content = document.querySelector('#content');
-    contact.addEventListener('click', () => {
-        if (contact.classList.contains('active')) {
-            contact.classList.remove('active');
-            content.innerHTML = '';
-        } else {
-            contact.classList.add('active');
-            content.innerHTML = `<div class="col">
-            <div class="row"><img class="tiny" src="./img/ig.svg"><a class="center" href="https://www.instagram.com/gonsalomonn/">Instagram</a></div>
-            <div class="row"><img class="tiny" src="./img/mail.svg"><a class="center" id="mail">salomongonzalo8@gmail.com</a></div>
-            </div>`;
-            let mail = document.querySelector('#mail');
-            mail.addEventListener('click', () => {
-                window.location.href = 'mailto:salomongonzalo8@gmail.com';
-            });
-        }
-    });
+    
 });
