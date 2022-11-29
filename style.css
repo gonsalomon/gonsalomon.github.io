@@ -10,6 +10,9 @@ body{
     font-family: 'Courier New', Courier, monospace;
     margin: 0em 0px;
 }
+ul li{
+    list-style: none;
+}
 
 header{
     background-color: gray;
@@ -67,7 +70,7 @@ div.container a
 div.container a:hover
 {
     background-color: #aaa;
-    color: white;
+    color: lightblue;
 }
 div.borderXwidth a:before, div.borderXwidth a:after
 {
@@ -114,9 +117,6 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
     justify-content: space-between;
     align-items: center;
     text-align: center;
-}
-ul li{
-    list-style: none;
 }
 
 @media screen and (max-width: 600px) {
