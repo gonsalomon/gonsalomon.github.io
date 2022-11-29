@@ -1,3 +1,6 @@
+html{
+    background-color: #aaa;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -11,9 +14,9 @@ header{
     background-color: gray;
     width: 100%;
     align-self: flex-start;
-    position: absolute;
+    position: sticky;
     top: 0px;
-    z-index: 3;
+    padding: 0px;
 }
 #logo{
     max-width: 300px;
@@ -26,24 +29,28 @@ h1{
 section{
     display: flex;
     background-color: #aaa;
-    justify-content: space-around;
-    margin: 0em;
+    justify-content: space-evenly;
     width: 100%;
-    position: absolute;
-    top: 0px;
+    position: sticky;
+}
+footer{
+    color:white;
+    background-color: gray;
+    width: 100%;
+    position: sticky;
     bottom: 0;
-    z-index: 2;
 }
 /*'button' behavior (they're only links, but still)*/
 a{
     background-color: gray;
-    padding: 5px;
+    padding: 50px;
+    margin: auto;
 }
 div.container{
     margin: 0 auto;
 	padding: 10em 3em;
 	text-align: center;
-    max-height: 100px;
+    min-width: 200px;
 }
 div.container a
 {
@@ -87,14 +94,14 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
 }
 .center{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
 .row{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -107,15 +114,6 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
 }
 ul li{
     list-style: none;
-}
-
-footer{
-    color:white;
-    background-color: gray;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    z-index: 2;
 }
 
 @media screen and (max-width: 600px) {
