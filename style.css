@@ -105,6 +105,9 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
     align-items: center;
     text-align: center;
 }
+ul li{
+    list-style: none;
+}
 
 footer{
     color:white;
