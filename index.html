@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gonzalo | Builder of Things</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
+  <title>Gonzalo Salomon | Data Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav>
-    <div class="nav-logo">Gonzalo Salomon</div>
+    <div class="nav-logo">G. Salomón</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -21,17 +23,18 @@
   <!-- HERO -->
   <div class="hero">
     <div class="hero-text">
-      <p class="hero-tag">// Tandil, Argentina</p>
+      <p class="hero-tag">// Data Engineer · Tandil, Argentina</p>
       <h1 class="hero-title">
-        I build things.
-        <span>With wood. With code.</span>
+        Cloud data infrastructure
+        <span>built to last.</span>
       </h1>
       <p class="hero-sub">
-        Carpenter and Node.js developer. I automate what shouldn't need human attention,
-        and craft by hand what deserves it.
+        Azure-based Data Engineer with proven experience in ETL development,
+        BI consulting, and government-scale data infrastructure.
+        I also build things with my hands — which changes how I think about systems.
       </p>
       <div class="hero-cta">
-        <a href="#projects" class="btn">See my work</a>
+        <a href="#experience" class="btn">My experience</a>
         <a href="#contact" class="btn btn-ghost">Get in touch</a>
       </div>
     </div>
@@ -42,22 +45,20 @@
           <div class="dot dot-r"></div>
           <div class="dot dot-y"></div>
           <div class="dot dot-g"></div>
-          <span class="terminal-title">bot.js — node</span>
+          <span class="terminal-title">pipeline.py — airflow</span>
         </div>
         <div class="terminal-body">
-          <div><span class="t-prompt">$ </span><span class="t-cmd">node bot.js</span></div>
-          <div><span class="t-out">[info] connecting to server...</span></div>
-          <div><span class="t-out">[info] logged in as </span><span class="t-hi">minero</span></div>
-          <div><span class="t-out">[info] awaiting commands</span></div>
+          <div><span class="t-prompt">$ </span><span class="t-cmd">airflow dags trigger etl_gcba</span></div>
+          <div><span class="t-out">[info] connecting to SQL Server...</span></div>
+          <div><span class="t-out">[info] source: </span><span class="t-hi">Oracle · PostgreSQL · MySQL</span></div>
+          <div><span class="t-out">[info] running transformations...</span></div>
           <br>
-          <div><span class="t-prompt">gonsalomon › </span><span class="t-cmd">mine staircase 30</span></div>
-          <div><span class="t-out">[bot] starting staircase descent...</span></div>
-          <div><span class="t-out">[bot] blocks mined: </span><span class="t-hi">12</span></div>
-          <div><span class="t-out">[bot] inventory: </span><span class="t-hi">64x cobblestone</span></div>
-          <div><span class="t-out">[bot] depositing to chest...</span></div>
-          <div><span class="t-out">[bot] done. idle.</span></div>
+          <div><span class="t-out">[dbt] model </span><span class="t-hi">stg_gcba</span><span class="t-out"> OK</span></div>
+          <div><span class="t-out">[dbt] model </span><span class="t-hi">fct_reporting</span><span class="t-out"> OK</span></div>
+          <div><span class="t-out">[soda] data quality checks: </span><span class="t-hi">passed</span></div>
+          <div><span class="t-out">[info] rows loaded: </span><span class="t-hi">847,291</span></div>
           <br>
-          <div><span class="t-prompt">gonsalomon › </span><span class="t-cursor"></span></div>
+          <div><span class="t-prompt">› </span><span class="t-cursor"></span></div>
         </div>
       </div>
     </div>
@@ -68,35 +69,44 @@
   <!-- ABOUT -->
   <section id="about">
     <p class="section-label">// 01 — about</p>
-    <h2 class="section-title">Craft is craft,<br><em>whatever the material.</em></h2>
+    <h2 class="section-title">Systems thinking,<br><em>at every scale.</em></h2>
     <div class="about-grid">
       <div class="about-text">
         <p>
-          I'm a self-employed carpenter based in Tandil with a parallel life in code.
-          My approach to both is the same: <strong>understand the system deeply, then build something that lasts.</strong>
+          I'm a results-oriented Data Engineer based in Tandil, Argentina,
+          with hands-on experience in <strong>Azure cloud infrastructure, ETL development,
+          and BI consulting</strong> for government-scale environments.
         </p>
         <p>
-          I got into programming the way most honest programmers do — I found something tedious and automated it.
-          That instinct now translates into automation tools, bots, and scripted workflows for real problems.
+          My background spans data pipeline architecture, multi-database environments,
+          and cloud-native deployments — built during real projects for the
+          Buenos Aires City Government (GCBA).
         </p>
         <p>
-          Currently studying at university and building my own home on a lot I own.
-          I work in two languages and think in several more.
+          In parallel, I work as an industrial carpenter operating CNC and precision machinery.
+          It's not a contradiction — it's the same discipline applied to different materials:
+          <strong>understand the system deeply, then build something that holds.</strong>
+        </p>
+        <p>
+          Currently completing a Data Engineering specialization at ICARO,
+          covering advanced SQL, PySpark, Databricks, and modern data infrastructure tooling.
         </p>
       </div>
       <div>
         <p class="section-label" style="margin-bottom:1rem;">// stack</p>
         <ul class="stack-list">
-          <li>Node.js</li>
-          <li>JavaScript</li>
-          <li>Automation</li>
-          <li>Bot development</li>
-          <li>REST APIs</li>
-          <li>Event-driven systems</li>
-          <li>Git / GitHub</li>
-          <li>Linux / Bash</li>
-          <li>Electronics / IoT</li>
-          <li>CNC (learning)</li>
+          <li>Azure Cloud Services</li>
+          <li>SQL / NoSQL</li>
+          <li>ETL · SSIS · SSAS</li>
+          <li>dbt · Airflow</li>
+          <li>Kubernetes · Docker</li>
+          <li>Power BI</li>
+          <li>GitHub Actions · CI/CD</li>
+          <li>PySpark · Databricks</li>
+          <li>Node.js · JavaScript</li>
+          <li>NextJS · Spring Boot</li>
+          <li>Alation · Informatica</li>
+          <li>Soda (Data Quality)</li>
         </ul>
       </div>
     </div>
@@ -104,44 +114,103 @@
 
   <div class="wood-divider"></div>
 
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label">// 02 — experience</p>
+    <h2 class="section-title">Where I've<br><em>done the work.</em></h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Apr 2025 — present</span>
+          <span class="timeline-tag">Carpentry</span>
+        </div>
+        <div class="timeline-content">
+          <h3 class="timeline-role">Carpentry Assistant</h3>
+          <p class="timeline-company">El Portal Amoblamientos · Tandil</p>
+          <ul class="timeline-bullets">
+            <li>Operation of industrial machinery: CNC lathe, panel saw, shaper, planer, and jointer for furniture component production</li>
+            <li>Custom furniture design and assembly per client specifications, with emphasis on precision and finish quality</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Jan 2024 — May 2024</span>
+          <span class="timeline-tag">Data · BI</span>
+        </div>
+        <div class="timeline-content">
+          <h3 class="timeline-role">Junior Data Analyst · BI Consultant</h3>
+          <p class="timeline-company">We Plan · Buenos Aires City Government (GCBA)</p>
+          <ul class="timeline-bullets">
+            <li>Data infrastructure maintenance and development for GCBA as technical consultant</li>
+            <li>ETL process design and implementation across SQL Server, Oracle, PostgreSQL & MySQL</li>
+            <li>Stored procedure optimization resulting in measurable improvements in system performance and processing efficiency</li>
+            <li>Certified in Alation, Informatica & Soda frameworks during this engagement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Feb 2023 — Jan 2024</span>
+          <span class="timeline-tag">Data · Cloud</span>
+        </div>
+        <div class="timeline-content">
+          <h3 class="timeline-role">Trainee BI</h3>
+          <p class="timeline-company">We Plan · Buenos Aires</p>
+          <ul class="timeline-bullets">
+            <li>Contributed to Azure-based cloud projects implementing Kubernetes, Airflow, dbt & GitHub Actions</li>
+            <li>Developed analytical solutions using SSIS and SSAS in Visual Studio with advanced Power BI reporting</li>
+            <li>Contributed to data warehouse architecture and ETL transformation pipeline design</li>
+            <li>Implemented Soda framework for data quality management and process optimization</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wood-divider"></div>
+
   <!-- PROJECTS -->
   <div class="projects-section" id="projects">
-    <p class="section-label">// 02 — projects</p>
+    <p class="section-label">// 03 — projects</p>
     <h2 class="section-title">Things I've <em>actually built.</em></h2>
     <div class="projects-grid">
 
       <div class="project-card">
-        <p class="project-tag">Node.js · Automation · Bot</p>
-        <h3 class="project-name">Mineflayer Mining Bot</h3>
+        <p class="project-tag">Azure · ETL · Multi-DB · Data Quality</p>
+        <h3 class="project-name">GCBA Data Infrastructure</h3>
         <p class="project-desc">
-          Autonomous Minecraft bot built because manual tree farming was a waste of attention.
-          Features staircase mining, chest deposit logic, inventory management, mob hunting, farming,
-          and chat-command control. Architected as an event-driven state machine.
+          Maintained and developed a complex multi-database environment spanning SQL Server,
+          Oracle, PostgreSQL, and MySQL for the Buenos Aires City Government.
+          Implemented automated ETL pipelines, Azure cloud processing,
+          and data quality governance using industry-standard frameworks.
         </p>
-        <div class="project-links">
-          <a href="https://github.com/gonsalomon" class="project-link" target="_blank">GitHub →</a>
-        </div>
       </div>
 
       <div class="project-card">
-        <p class="project-tag">Carpentry · Construction</p>
-        <h3 class="project-name">Custom Staircase Railings</h3>
+        <p class="project-tag">Azure · Kubernetes · dbt · Power BI · CI/CD</p>
+        <h3 class="project-name">Cloud-Native Data Solutions</h3>
         <p class="project-desc">
-          Residential metalwork and wood installations across Tandil.
-          Measurement, fabrication, and setup — end to end.
-          The kind of work where tolerances are millimetric and visible forever.
+          Deployed containerized applications using Docker and Kubernetes.
+          Implemented CI/CD pipelines with GitHub Actions for automated deployment.
+          Integrated Power BI reporting with cloud-based data sources
+          for live business intelligence dashboards.
         </p>
-        <div class="project-links">
-          <a href="#contact" class="project-link">Inquire →</a>
-        </div>
       </div>
 
       <div class="project-card">
-        <p class="project-tag">Electronics · DIY</p>
-        <h3 class="project-name">Portable Speaker Build</h3>
+        <p class="project-tag">Node.js · Automation · Event-driven architecture</p>
+        <h3 class="project-name">Autonomous Task Bot</h3>
         <p class="project-desc">
-          Salvaged laptop speakers, TP4056 charge controller, 18650 Li-ion cell,
-          and a TDA stereo amplifier IC. Built from components, not a kit.
+          Built a fully autonomous bot in Node.js to handle repetitive task sequences
+          without human intervention. State machine logic, resource management,
+          dynamic command parsing, and deposit workflows —
+          automation thinking applied directly to code.
         </p>
         <div class="project-links">
           <a href="https://github.com/gonsalomon" class="project-link" target="_blank">GitHub →</a>
@@ -153,17 +222,90 @@
 
   <div class="wood-divider"></div>
 
+  <!-- EDUCATION & CERTS -->
+  <section id="education">
+    <p class="section-label">// 04 — education & certifications</p>
+    <h2 class="section-title">Formation,<br><em>still in progress.</em></h2>
+
+    <div class="edu-grid">
+      <div>
+        <p class="section-label" style="margin-bottom: 1.5rem;">// education</p>
+        <div class="edu-list">
+
+          <div class="edu-item">
+            <span class="edu-date">Dec 2025 — present</span>
+            <h4 class="edu-title">Diplomatura en Data Engineering</h4>
+            <p class="edu-inst">ICARO</p>
+            <p class="edu-desc">Advanced SQL optimization, data analysis with PySpark and Databricks, and current industry tooling for digital data infrastructure. Final stage in progress.</p>
+          </div>
+
+          <div class="edu-item">
+            <span class="edu-date">Mar 2021 — present</span>
+            <h4 class="edu-title">Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas</h4>
+            <p class="edu-inst">UNCPBA · Tandil</p>
+            <p class="edu-desc">Specialized focus on practical programming and software development methodologies.</p>
+          </div>
+
+          <div class="edu-item">
+            <span class="edu-date">Feb 2016 — Dec 2020 (paused)</span>
+            <h4 class="edu-title">Ingeniería de Sistemas</h4>
+            <p class="edu-inst">UNCPBA · Tandil</p>
+            <p class="edu-desc">Comprehensive foundation in software development and computer science principles.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div>
+        <p class="section-label" style="margin-bottom: 1.5rem;">// certifications</p>
+        <div class="cert-list">
+
+          <div class="cert-item">
+            <span class="cert-icon">◈</span>
+            <div>
+              <h4 class="cert-title">Alation Certified Consultant</h4>
+              <p class="cert-meta">We Plan · Aug – Oct 2023</p>
+              <p class="cert-desc">Comprehensive training in data catalog functionality and strategic implementation.</p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <span class="cert-icon">◈</span>
+            <div>
+              <h4 class="cert-title">Soda Certified: Cloud Fundamentals</h4>
+              <p class="cert-meta">We Plan · Nov 2023 – Jan 2024</p>
+              <p class="cert-desc">Advanced data quality management with AKS, dbt, Airflow and GitHub Actions integration.</p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <span class="cert-icon">◈</span>
+            <div>
+              <h4 class="cert-title">English C2 Proficient</h4>
+              <p class="cert-meta">EF SET · 77/100</p>
+              <p class="cert-desc">Full professional working proficiency. All technical documentation and client communication handled in English.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wood-divider"></div>
+
   <!-- CONTACT -->
   <section id="contact">
-    <p class="section-label">// 03 — contact</p>
+    <p class="section-label">// 05 — contact</p>
     <h2 class="section-title">Let's build<br><em>something.</em></h2>
     <div class="contact-inner">
       <div class="contact-text">
         <p>
-          Available for freelance automation and scripting projects.
-          I work in English and Spanish, communicate clearly, and ship what I promise.
+          Available for freelance data engineering, ETL development,
+          and automation projects. I work in English and Spanish,
+          communicate clearly, and ship what I promise.
         </p>
-        <a href="mailto:your@email.com" class="btn">Send a message</a>
+        <a href="mailto:salomongonzalo8@gmail.com" class="btn">Send a message</a>
       </div>
       <ul class="contact-info">
         <li>
@@ -171,23 +313,23 @@
           <span>Tandil, Buenos Aires, Argentina</span>
         </li>
         <li>
+          <span>Email</span>
+          <a href="mailto:salomongonzalo8@gmail.com">salomongonzalo8@gmail.com</a>
+        </li>
+        <li>
           <span>GitHub</span>
           <a href="https://github.com/gonsalomon" target="_blank">github.com/gonsalomon</a>
         </li>
         <li>
-          <span>Upwork</span>
-          <a href="#" target="_blank">coming soon</a>
-        </li>
-        <li>
           <span>Languages</span>
-          <span>Spanish (native) · English (professional)</span>
+          <span>Spanish (native) · English (C2)</span>
         </li>
       </ul>
     </div>
   </section>
 
   <footer>
-    <span>G. Salomón</span>
+    <span>Gonzalo Salomon</span>
     <span>Built by hand — <span>like everything else.</span></span>
     <span>Tandil © 2026</span>
   </footer>

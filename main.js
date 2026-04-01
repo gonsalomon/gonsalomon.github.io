@@ -1,8 +1,8 @@
-// Smooth nav highlight on scroll
+// Nav highlight on scroll
 const sections = document.querySelectorAll('section, .projects-section');
 const navLinks = document.querySelectorAll('.nav-links a');
 
-const observer = new IntersectionObserver((entries) => {
+const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const id = entry.target.getAttribute('id');
@@ -11,9 +11,9 @@ const observer = new IntersectionObserver((entries) => {
       });
     }
   });
-}, { threshold: 0.4 });
+}, { threshold: 0.35 });
 
-sections.forEach(s => observer.observe(s));
+sections.forEach(s => sectionObserver.observe(s));
 
 // Fade-in on scroll for project cards
 const cards = document.querySelectorAll('.project-card');
@@ -21,8 +21,7 @@ const cards = document.querySelectorAll('.project-card');
 const cardObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      entry.target.style.animationDelay = `${i * 0.1}s`;
-      entry.target.classList.add('visible');
+      setTimeout(() => entry.target.classList.add('visible'), i * 100);
       cardObserver.unobserve(entry.target);
     }
   });
